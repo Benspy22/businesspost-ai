@@ -1,0 +1,415 @@
+/* Styles généraux */
+.wrap {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Styles du formulaire de configuration public */
+#bpai-config-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#bpai-config-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0 8px;
+    color: #1d2327;
+}
+
+#bpai-config-form input[type="text"],
+#bpai-config-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+#bpai-config-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.bpai-checkboxes {
+    margin: 15px 0;
+    padding: 20px;
+    background: #f6f7f7;
+    border-radius: 4px;
+    border: 1px solid #dcdcde;
+}
+
+.bpai-checkboxes label {
+    display: inline-block !important;
+    margin: 0 20px 10px 0 !important;
+    font-weight: normal !important;
+}
+
+.bpai-checkboxes input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Styles de l'interface d'administration */
+.bpai-generator-form {
+    background: #fff;
+    padding: 25px;
+    margin: 20px 0;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.form-group:last-child {
+    border-bottom: none;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1d2327;
+}
+
+.form-group .required {
+    color: #d63638;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group select {
+    height: 35px;
+}
+
+.description {
+    font-size: 13px;
+    font-style: italic;
+    color: #646970;
+    margin-top: 4px;
+}
+
+/* Styles pour le post généré */
+.bpai-generated-post {
+    background: #fff;
+    padding: 25px;
+    margin: 20px 0;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.bpai-generated-post h3 {
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dcdcde;
+    color: #1d2327;
+    font-size: 16px;
+}
+
+.post-content {
+    background: #f6f7f7;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 4px;
+    border: 1px solid #dcdcde;
+    white-space: pre-wrap;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Styles des boutons */
+.form-actions {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f1;
+}
+
+button.button,
+.button-primary {
+    padding: 0 12px !important;
+    min-height: 35px;
+    line-height: 2.3;
+    font-size: 13px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.button-primary {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+}
+
+.button-primary:hover {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+button.copy-button {
+    margin-top: 15px;
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+button.copy-button:hover {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+/* Styles des messages de notification */
+.notice {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-left-width: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin: 20px 0;
+    padding: 12px;
+}
+
+.notice-success {
+    border-left-color: #00a32a;
+}
+
+.notice-error {
+    border-left-color: #d63638;
+}
+
+/* Styles des états de focus */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2271b1 !important;
+    box-shadow: 0 0 0 1px #2271b1 !important;
+    outline: 2px solid transparent !important;
+}
+
+/* Styles pour la page des paramètres API */
+.form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.form-table td {
+    padding: 20px 10px;
+}
+
+.regular-text {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .form-group input[type="text"],
+    .form-group select {
+        font-size: 16px;
+        max-width: none;
+    }
+
+    .bpai-generator-form {
+        margin: 10px 0;
+        padding: 15px;
+    }
+    
+    .form-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-actions button {
+        width: 100%;
+    }
+    
+    #bpai-config-form {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .bpai-checkboxes label {
+        display: block !important;
+        margin: 10px 0 !important;
+    }
+
+    .form-table td {
+        padding: 15px 10px;
+    }
+}
+
+/* Animation du bouton de copie */
+.copy-button:active {
+    transform: scale(0.98);
+}
+
+/* Style amélioré pour le placeholder */
+::-webkit-input-placeholder {
+    color: #a7aaad;
+}
+:-moz-placeholder {
+    color: #a7aaad;
+}
+::-moz-placeholder {
+    color: #a7aaad;
+}
+:-ms-input-placeholder {
+    color: #a7aaad;
+}
+
+/* Style du conteneur principal */
+.bpai-generator-form {
+    background: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des groupes de formulaire */
+.form-group {
+    margin-bottom: 35px;
+    padding-bottom: 0;
+    border: none;
+}
+
+/* Style des labels */
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #1d2327;
+}
+
+/* Style de l'astérisque obligatoire */
+.required {
+    color: #d63638;
+    margin-left: 3px;
+}
+
+/* Style des champs de texte et des selects */
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    height: auto;
+    background-color: #fff;
+}
+
+/* Style spécifique pour les selects */
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+    padding-right: 32px;
+}
+
+/* Style du texte d'aide */
+.description {
+    font-size: 13px;
+    font-style: italic;
+    color: #666;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+/* Style des boutons */
+.form-actions {
+    margin-top: 40px;
+    padding: 0;
+    border: none;
+    display: flex;
+    gap: 10px;
+}
+
+.button-primary {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+    padding: 8px 16px;
+    height: auto;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.button {
+    padding: 8px 16px;
+    height: auto;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+/* États de survol et focus */
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.button-primary:hover {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .bpai-generator-form {
+        padding: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 25px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group select {
+        font-size: 16px;
+    }
+}
+
+/* Style du placeholder */
+::placeholder {
+    color: #757575;
+    opacity: 1;
+}
+
+/* Style particulier pour les sélecteurs désactivés ou vides */
+select:invalid,
+select option:first-child {
+    color: #757575;
+}
